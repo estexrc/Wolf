@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/estexrc/Wolf.git"
+    "url": "git+https://github.com/estexrc/WolfProducciones.git"
   },
   "author": "Esteban Auguadra",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/estexrc/Wolf/issues"
+    "url": "https://github.com/estexrc/WolfProducciones/issues"
   },
-  "homepage": "https://github.com/estexrc/Wolf#readme"
+  "homepage": "https://github.com/estexrc/WolfProducciones#readme"
 }
