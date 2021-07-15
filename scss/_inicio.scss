@@ -1,0 +1,26 @@
+.inicio {
+  @include flex(flex, column, center, center, no-wrap);
+}
+.inicio__parrafo {
+  @include titulo(1.3em, center, 800, #000);
+  text-shadow: #fff 0.5px 0.5px;
+  margin-top: 5vh;
+}
+.inicio__imagen {
+  margin-top: 16vh;
+  min-width: 30vw;
+  max-height: 58vh;
+}
+@media screen and (min-width: 398px) and (max-width: 768px) {
+  .inicio__imagen {
+    margin-top: 14vh;
+  }
+  .inicio__parrafo {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .inicio__parrafo {
+    font-size: 2em;
+  }
+}

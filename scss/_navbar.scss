@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+}
+nav {
+  background-image: linear-gradient(90deg, #353333, #858282);
+}
+.botones__lista__item {
+  font-family: lato, sans-serif;
+  font-weight: 800;
+  &:hover {
+    background: #494646;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+}
+
+.botones__lista__item__link {
+  font-size: 1.3rem;
+  color: #fff !important; /*no me cambia los colores por eso el uso de !important*/
+}
+.navbar__logo {
+  color: #fff !important; /*no me cambia los colores por eso el uso de !important*/
+  font-family: montserrat, sans-serif;
+  font-size: 2rem;
+}
