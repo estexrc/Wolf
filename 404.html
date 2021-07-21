@@ -8,102 +8,20 @@
     <title>Wolf - Error 404</title>
     <link rel="icon" href="imagenes/logo-head.png" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&display=swap"
       rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
     />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand navbar__logo" href="index.html"
-            >Wolf Producciones</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="
-              botones
-              collapse
-              navbar-collapse
-              text-center
-              d-lg-flex
-              flex-row
-              justify-content-end
-            "
-            id="navbarNav"
-          >
-            <ul class="navbar-nav navbar__botones__lista">
-              <li class="nav-item botones__lista__item">
-                <a
-                  class="nav-link botones__lista__item__link"
-                  aria-current="page"
-                  href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item botones__lista__item">
-                <a
-                  class="nav-link botones__lista__item__link"
-                  href="servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item botones__lista__item">
-                <a
-                  class="nav-link botones__lista__item__link"
-                  href="galeria.html"
-                  >Galería</a
-                >
-              </li>
-              <li class="nav-item botones__lista__item">
-                <a
-                  class="nav-link botones__lista__item__link"
-                  href="nosotros.html"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="nav-item botones__lista__item">
-                <a
-                  class="nav-link botones__lista__item__link"
-                  href="contacto.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-            <a
-              href="https://api.whatsapp.com/send?phone=543413549436"
-              target="_blank"
-              class="nav-link"
-              ><button
-                class="btnNav btn btn-success fw-bold navbar__botones__whatsapp"
-              >
-                Whatsapp
-              </button></a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
-    <h1>404</h1>
-    <img src="imagenes/404.png" alt="" />
-    <p>Lo sentimos, la página que intenta acceder no existe</p>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+  <body class="bodyError">
+    <div class="error__container">
+      <img src="imagenes/error.png" alt="" class="error__img" />
+      <p class="error__texto">
+        Al parecer la página que intenta acceder no existe, pero puede volver al
+        inicio haciendo click
+      </p>
+      <button class="error__boton">
+        <a href="index.html" class="error__anchor">Acá</a>
+      </button>
+    </div>
   </body>
 </html>
