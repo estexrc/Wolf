@@ -3,10 +3,63 @@
   width: 100%;
   padding-top: 18vh;
   padding-bottom: 5vh;
+  display: grid;
 }
 .container__servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+.servicios__caja {
+  background-color: rgba(109, 109, 116, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba (0, 0, 0, 0.18);
+}
+.servicios__titulo {
+  @include titulo(30px, center, 600, #fff);
+  padding: 7px;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(109, 109, 116, 0.6);
+}
+.servicios__descripcion {
+  @include titulo(20px, center, 500, #fff);
+  margin: 30px 10px;
+}
+@media screen and (min-width: 767px) and (max-width: 869px) {
+  .container__servicios {
+    grid-template-rows: minmax(200px, 400px);
+  }
+  .servicios__descripcion {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 870px) and (max-width: 949px) {
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 550px));
+  }
+  .servicios__descripcion {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 450px));
+  }
+  .servicios__descripcion {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+  }
+  .servicios__descripcion {
+    font-size: 1.75rem;
+  }
+}
+/*.container__servicios {
   @include flex(flex, row, space-around, center, wrap);
-  height: 80vh;
   margin-top: 5vh;
 }
 .servicios__caja {
@@ -16,6 +69,7 @@
   padding: 0;
   padding-bottom: 10px;
   width: 90%;
+  margin: 15px;
   font-family: montserrat;
 }
 .servicios__titulo {
@@ -36,13 +90,7 @@
   font-style: italic;
   height: 50%;
 }
-.servicios__boton {
-  @include boton(none, 50px, #2c8cb5, #fff, 600, 1.1rem);
-  padding: 15px 30px;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
+
 @media screen and (min-width: 398px) and (max-width: 768px) {
   .servicios {
     padding-top: 10vh;
@@ -57,10 +105,6 @@
   .servicios__descripcion {
     font-size: 22px;
     padding: 5px 5px;
-  }
-  .servicios__boton {
-    font-size: 0.9rem;
-    padding: 10px 30px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -78,8 +122,5 @@
     font-size: 1.3em;
     padding: 20px 5px;
   }
-  .servicios__boton {
-    font-size: 1rem;
-    padding: 10px 30px;
-  }
 }
+*/
