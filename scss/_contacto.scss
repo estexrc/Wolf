@@ -2,7 +2,7 @@
   @include flex(flex, row, center, center, wrap);
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url(../imagenes/contacto2.jpg);
-  min-height: 100vh; /*sacando este parametro tampoco me deja usar wrap*/
+  min-height: 100vh;
   width: 100%;
   padding: 10vh 5vw 10vh 5vw;
   .container__info {

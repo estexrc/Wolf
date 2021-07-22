@@ -853,6 +853,34 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
   font-weight: 600;
 }
 
+.contenedor-nosotros__parpadeo {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #b8b0b0;
+  text-transform: uppercase;
+  animation-name: parpadeo;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .contenedor-nosotros__boton {
   border: none;
   border-radius: 50px;
@@ -928,6 +956,10 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
     font-size: 2rem;
   }
 
+  .contenedor-nosotros__parpadeo {
+    font-size: 1rem;
+  }
+
   .contenedor-nosotros__boton a {
     font-size: 1.7rem;
   }
@@ -940,7 +972,6 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
   flex-wrap: wrap;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../imagenes/contacto2.jpg);
   min-height: 100vh;
-  /*sacando este parametro tampoco me deja usar wrap*/
   width: 100%;
   padding: 10vh 5vw 10vh 5vw;
 }
