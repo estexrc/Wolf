@@ -40,6 +40,7 @@
 @media screen and (min-width: 870px) and (max-width: 949px) {
   .servicios {
     padding-top: 9vh;
+    margin-bottom: 8.1vh;
   }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 550px));
@@ -51,6 +52,7 @@
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   .servicios {
     padding-top: 9vh;
+    margin-bottom: 19.6vh;
   }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 450px));
@@ -62,6 +64,7 @@
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   .servicios {
     padding-top: 11vh;
+    margin-bottom: 22.8vh;
   }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
@@ -70,9 +73,10 @@
     font-size: 1.75rem;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1401px) and (max-width: 1599px) {
   .servicios {
     padding-top: 20vh;
+    margin-bottom: 13vh;
   }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 350px));
@@ -81,69 +85,15 @@
     font-size: 1.75rem;
   }
 }
-/*.container__servicios {
-  @include flex(flex, row, space-around, center, wrap);
-  margin-top: 5vh;
-}
-.servicios__caja {
-  @include flex(flex, column, center, center, no-wrap);
-  border-radius: 20px;
-  background-color: rgba(109, 109, 116, 0.6);
-  padding: 0;
-  padding-bottom: 10px;
-  width: 90%;
-  margin: 15px;
-  font-family: montserrat;
-}
-.servicios__titulo {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  background-color: rgba(109, 109, 116, 0.6);
-  border-radius: 20px 20px 0 0;
-  font-size: 25px;
-  font-weight: 600;
-}
-.servicios__descripcion {
-  text-align: center;
-  padding: 5px;
-  margin-top: 25px;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: italic;
-  height: 50%;
-}
-
-@media screen and (min-width: 398px) and (max-width: 768px) {
+@media screen and (min-width: 1600px) {
   .servicios {
-    padding-top: 10vh;
+    padding-top: 20vh;
+    margin-bottom: 24.4vh;
   }
-  .servicios__caja {
-    width: 70%;
-  }
-  .servicios__titulo {
-    font-size: 27px;
-    width: 100%;
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 350px));
   }
   .servicios__descripcion {
-    font-size: 22px;
-    padding: 5px 5px;
+    font-size: 1.75rem;
   }
 }
-@media screen and (min-width: 769px) {
-  .servicios {
-    padding-top: 8vh;
-  }
-  .servicios__caja {
-    width: calc(90% / 3);
-  }
-  .servicios__titulo {
-    font-size: 1.5em;
-    width: 100%;
-  }
-  .servicios__descripcion {
-    font-size: 1.3em;
-    padding: 20px 5px;
-  }
-}
-*/

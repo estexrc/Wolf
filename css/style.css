@@ -389,43 +389,6 @@
   color: #fff;
 }
 
-.fotos__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 25vh;
-  grid-gap: 5px;
-  margin: auto 1vw;
-}
-.fotos__container .fotos__item:nth-child(1) {
-  grid-column-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(2) {
-  grid-row-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(3) {
-  grid-row-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(4) {
-  grid-row-start: span 3;
-}
-.fotos__container .fotos__item:nth-child(5) {
-  grid-row-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(7) {
-  grid-row-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(8) {
-  grid-row-start: span 2;
-}
-.fotos__container .fotos__item:nth-child(9) {
-  grid-column-start: span 2;
-}
-.fotos__container .fotos__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media screen and (min-width: 397px) and (max-width: 768px) {
   .carousel {
     height: 75vh;
@@ -740,6 +703,7 @@ nav {
 @media screen and (min-width: 870px) and (max-width: 949px) {
   .servicios {
     padding-top: 9vh;
+    margin-bottom: 8.1vh;
   }
 
   .container__servicios {
@@ -753,6 +717,7 @@ nav {
 @media screen and (min-width: 950px) and (max-width: 1200px) {
   .servicios {
     padding-top: 9vh;
+    margin-bottom: 19.6vh;
   }
 
   .container__servicios {
@@ -766,6 +731,7 @@ nav {
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
   .servicios {
     padding-top: 11vh;
+    margin-bottom: 22.8vh;
   }
 
   .container__servicios {
@@ -776,9 +742,10 @@ nav {
     font-size: 1.75rem;
   }
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1401px) and (max-width: 1599px) {
   .servicios {
     padding-top: 20vh;
+    margin-bottom: 13vh;
   }
 
   .container__servicios {
@@ -789,72 +756,20 @@ nav {
     font-size: 1.75rem;
   }
 }
-/*.container__servicios {
-  @include flex(flex, row, space-around, center, wrap);
-  margin-top: 5vh;
-}
-.servicios__caja {
-  @include flex(flex, column, center, center, no-wrap);
-  border-radius: 20px;
-  background-color: rgba(109, 109, 116, 0.6);
-  padding: 0;
-  padding-bottom: 10px;
-  width: 90%;
-  margin: 15px;
-  font-family: montserrat;
-}
-.servicios__titulo {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  background-color: rgba(109, 109, 116, 0.6);
-  border-radius: 20px 20px 0 0;
-  font-size: 25px;
-  font-weight: 600;
-}
-.servicios__descripcion {
-  text-align: center;
-  padding: 5px;
-  margin-top: 25px;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: italic;
-  height: 50%;
-}
+@media screen and (min-width: 1600px) {
+  .servicios {
+    padding-top: 20vh;
+    margin-bottom: 24.4vh;
+  }
 
-@media screen and (min-width: 398px) and (max-width: 768px) {
-  .servicios {
-    padding-top: 10vh;
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 350px));
   }
-  .servicios__caja {
-    width: 70%;
-  }
-  .servicios__titulo {
-    font-size: 27px;
-    width: 100%;
-  }
+
   .servicios__descripcion {
-    font-size: 22px;
-    padding: 5px 5px;
+    font-size: 1.75rem;
   }
 }
-@media screen and (min-width: 769px) {
-  .servicios {
-    padding-top: 8vh;
-  }
-  .servicios__caja {
-    width: calc(90% / 3);
-  }
-  .servicios__titulo {
-    font-size: 1.5em;
-    width: 100%;
-  }
-  .servicios__descripcion {
-    font-size: 1.3em;
-    padding: 20px 5px;
-  }
-}
-*/
 body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
   background-color: #7f7f7f;
   font-size: 22px;
@@ -1442,14 +1357,36 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1,
     font-size: 1.6em;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 999px) {
   .inicio__imagen {
     margin-top: 9vh;
   }
 
   .inicio__parrafo {
     font-size: 2em;
-    margin-bottom: 16.4vh;
+    margin-bottom: 11vh;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+  .inicio__imagen {
+    margin-top: 9vh;
+  }
+
+  .inicio__parrafo {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 3.7vh;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .inicio__imagen {
+    margin-top: 9vh;
+  }
+
+  .inicio__parrafo {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 9.2vh;
   }
 }
 .bodyError {
@@ -1564,23 +1501,11 @@ footer {
   }
 }
 @media screen and (min-width: 870px) and (max-width: 999px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
   .footer__redes-img {
     width: 2.7rem;
   }
 }
 @media screen and (min-width: 1000px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
   .footer__redes-img {
     width: 3rem;
   }
