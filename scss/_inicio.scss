@@ -4,7 +4,7 @@
 .inicio__parrafo {
   @include titulo(1.3em, center, 800, #000);
   text-shadow: #fff 0.5px 0.5px;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 .inicio__imagen {
   margin-top: 16vh;
@@ -13,14 +13,18 @@
 }
 @media screen and (min-width: 398px) and (max-width: 768px) {
   .inicio__imagen {
-    margin-top: 14vh;
+    margin-top: 9vh;
   }
   .inicio__parrafo {
     font-size: 1.6em;
   }
 }
 @media screen and (min-width: 769px) {
+  .inicio__imagen {
+    margin-top: 9vh;
+  }
   .inicio__parrafo {
     font-size: 2em;
+    margin-bottom: 16.4vh;
   }
 }

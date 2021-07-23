@@ -1,7 +1,7 @@
 .servicios {
-  min-height: 100vh;
+  max-height: 90%;
   width: 100%;
-  padding-top: 18vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
   display: grid;
 }
@@ -27,6 +27,9 @@
   margin: 30px 10px;
 }
 @media screen and (min-width: 767px) and (max-width: 869px) {
+  .servicios {
+    padding-top: 11vh;
+  }
   .container__servicios {
     grid-template-rows: minmax(200px, 400px);
   }
@@ -35,6 +38,9 @@
   }
 }
 @media screen and (min-width: 870px) and (max-width: 949px) {
+  .servicios {
+    padding-top: 9vh;
+  }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 550px));
   }
@@ -43,6 +49,9 @@
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1200px) {
+  .servicios {
+    padding-top: 9vh;
+  }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 450px));
   }
@@ -50,9 +59,23 @@
     font-size: 1.7rem;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .servicios {
+    padding-top: 11vh;
+  }
   .container__servicios {
     grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
+  }
+  .servicios__descripcion {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .servicios {
+    padding-top: 20vh;
+  }
+  .container__servicios {
+    grid-template-rows: repeat(auto-fit, minmax(300px, 350px));
   }
   .servicios__descripcion {
     font-size: 1.75rem;

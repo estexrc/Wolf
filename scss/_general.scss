@@ -15,9 +15,11 @@ body,
 .body__index {
   background-image: url(../imagenes/inicio.jpg);
   background-attachment: fixed;
+  position: relative;
 }
 .body__servicios {
   background-image: url(../imagenes/servicios.jpg);
+  min-height: 100vh;
 }
 .contenedor-boton-carusel__anchor {
   text-decoration: none;
