@@ -95,10 +95,10 @@
         padding: 13px;
         opacity: 0;
         h2 {
-          @include titulo(2.2em, center, 600, #fff);
+          @include titulo(2em, center, 600, #fff);
         }
         p {
-          @include titulo(1.6em, center, 400, #fff);
+          @include titulo(1.2em, center, 400, #fff);
         }
         &:hover {
           opacity: 1;
