@@ -979,7 +979,7 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
 
 .dropdown-menu {
   text-align: center;
-  max-width: 300px;
+  max-width: 250px;
   max-height: 350px;
   border-radius: 30px;
   padding: 5px;
