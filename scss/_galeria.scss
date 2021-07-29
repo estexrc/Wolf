@@ -430,21 +430,6 @@
   .fotos {
     padding-top: 11vh;
   }
-  .contenedor__cortos {
-    .cortos__caja {
-      height: 550px;
-      width: 366px;
-      margin: 20px;
-      @include fondo(cover, center center, no-repeat);
-    }
-  }
-  .largos__item {
-    height: 550px !important;
-    width: 366px !important;
-    margin: 20px !important;
-    @include fondo(cover, center center, no-repeat);
-  }
-
   .fotos__container {
     grid-template-columns: repeat(4, 1fr);
   }
