@@ -1278,7 +1278,7 @@ body, .contenedor__item3, .contenedor__item2, .contenedor__item1 {
   border-radius: 0px 0px 20px 20px;
   margin-left: 10vw;
 }
-.contacto__formulario .formulario .formulario__contenedor {
+.contacto__formulario .formulario .formulario__caja {
   width: 100%;
 }
 .contacto__formulario label {
@@ -1356,7 +1356,7 @@ textarea {
     min-height: 100vh;
   }
 
-  .contenedor {
+  .contenedor__formulario {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -1364,15 +1364,15 @@ textarea {
     align-items: center;
     flex-wrap: no-wrap;
   }
-  .contenedor .formulario__titulo,
-.contenedor .formulario {
+  .contenedor__formulario .formulario__titulo,
+.contenedor__formulario .formulario {
     width: 65vw;
     margin: 0;
   }
-  .contenedor .formulario__boton {
+  .contenedor__formulario .formulario__boton {
     font-size: 20px;
   }
-  .contenedor label {
+  .contenedor__formulario label {
     font-size: 26px;
   }
 
@@ -1387,7 +1387,7 @@ textarea {
     padding-top: 14vh;
     padding-bottom: 2.5vh;
   }
-  .contacto__formulario .contenedor {
+  .contacto__formulario .contenedor__formulario {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -1395,12 +1395,12 @@ textarea {
     align-items: center;
     flex-wrap: no-wrap;
   }
-  .contacto__formulario .contenedor .formulario,
-.contacto__formulario .contenedor .formulario__titulo {
+  .contacto__formulario .contenedor__formulario .formulario,
+.contacto__formulario .contenedor__formulario .formulario__titulo {
     margin: 0;
     width: 55vw;
   }
-  .contacto__formulario .contenedor label {
+  .contacto__formulario .contenedor__formulario label {
     font-size: 28px;
   }
 

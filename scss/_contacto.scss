@@ -62,7 +62,7 @@
     width: 80vw;
     border-radius: 0px 0px 20px 20px;
     margin-left: 10vw;
-    .formulario__contenedor {
+    .formulario__caja {
       width: 100%;
     }
   }
@@ -126,7 +126,7 @@ textarea {
     padding-bottom: 2vh;
     min-height: 100vh;
   }
-  .contenedor {
+  .contenedor__formulario {
     margin: 0;
     @include flex(flex, column, center, center, no-wrap);
     .formulario__titulo,
@@ -151,7 +151,7 @@ textarea {
     min-height: 100vh;
     padding-top: 14vh;
     padding-bottom: 2.5vh;
-    .contenedor {
+    .contenedor__formulario {
       margin: 0;
       @include flex(flex, column, center, center, no-wrap);
       .formulario,
