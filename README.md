@@ -17,4 +17,4 @@ Lastly, if you want to see the final web site only click on the link below.
 
 ## Site link
 
-https://estexrc.github.io/WolfProducciones/
+https://estexrc.github.io/WolfProd-cdn-/
